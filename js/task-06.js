@@ -6,6 +6,7 @@ function onInputChange(event) {
     let count = event.currentTarget.value;
     if (count.length !== Number(input.dataset.length)) {
         input.classList.add('invalid');
+        input.classList.remove('valid');
     } else {
         input.classList.remove('invalid');
         input.classList.add('valid');
