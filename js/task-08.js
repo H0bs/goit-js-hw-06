@@ -15,6 +15,7 @@ function onFormSubmit(event) {
     }
 
     if (formData.email !== "" && formData.password !== "") {
+        console.log(formData);
         event.currentTarget.reset();
     }
 }
